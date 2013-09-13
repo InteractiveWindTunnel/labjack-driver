@@ -104,7 +104,7 @@ while x != ord('6'):
          t.stop_measures()
          series+=1
        else:
-         t.storage.filename='/home/gosimowicz/www/ita/web/pomiary/'+base_filename+'_'+str(series)+'.csv'
+         t.storage.filename='.'+base_filename+'_'+str(series)+'.csv'
          t.start_measures()
      if x==ord('5'):
        windpaused=True
@@ -113,4 +113,3 @@ while x != ord('6'):
 curses.endwin()
 windrunning=False
 wsthread.join()
-
